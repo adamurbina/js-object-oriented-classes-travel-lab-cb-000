@@ -15,12 +15,14 @@ class Route {
     this.endingLocation = endingLocation;
     this.vertical = Math.abs(beginningLocation.vertical - endingLocation.vertical);
     this.horizontal = Math.abs(eastWest.indexOf(beginningLocation.horizontal) - eastWest.indexOf(endingLocation.horizontal));
-
   }
 
   blocksTravelled () {
     return this.blocksTravelled = this.vertical + this.horizontal;
   }
+
+  
+  
 }
 
 let eastWest = [
