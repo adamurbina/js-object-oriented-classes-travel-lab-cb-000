@@ -21,8 +21,13 @@ class Route {
     return this.blocksTravelled = this.vertical + this.horizontal;
   }
 
-  estimatedTime () {
-    
+  estimatedTime (peakBool) {
+    if (peakBool) {
+      return blocksTravelled() * 3;
+    }
+    else {
+      return blocksTravelled() * 2;
+    }
   }
 
 }
